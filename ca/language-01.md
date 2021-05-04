@@ -61,16 +61,16 @@ De tota manera el sistema de macros encara es pot fer servís _si calgués_, per
 \`{a} & accent greu \\
 \'{e} & accent agut \\
 \^{i} & accent circumflex \\
-\"{o} & diéresi \\
+\"{o} & dièresi \\
 \~{u} & titlla \\
-\={o} & sobrerratllat \\
+\={o} & màcron \\
 \.{o} & punt \\
-\u{o} & \\
-\v{o} & \\
+\u{o} & accent breu\\
+\v{o} & accent anticircumflex\\
 \H{o} & diéresi hongaresa \\
 \t{oo} &\\
-\c{c} & trencada\\
-\d{o} & punt a sota \\
+\c{c} & trenc\\
+\d{o} & punt superior \\
 \b{o} & subratllat \\
 \r{o} & anell \\
 \k{o} & ogonek \\
