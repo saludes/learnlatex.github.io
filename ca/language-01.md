@@ -2,7 +2,7 @@
 layout: "lesson"
 lang: "ca"
 title: "Particularitats del català"
-description: "Aquesta lliçó explica detalls específics referents a escriure documents LaTeX en català. Ens referim a la separació de guions i els accents.
+description: "Aquesta lliçó explica detalls específics referents a escriure documents LaTeX en català. Ens referim a la separació de guions i els accents."
 next: "extra-01"
 toc-anchor-text: "LaTeX en català"
 toc-description: "Particularitats del català"
