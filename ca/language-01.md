@@ -67,7 +67,7 @@ De tota manera el sistema de macros encara es pot fer servís _si calgués_, per
 \.{o} & punt \\
 \u{o} & accent breu\\
 \v{o} & accent anticircumflex\\
-\H{o} & diéresi hongaresa \\
+\H{o} & dièresi hongaresa \\
 \t{oo} &\\
 \c{c} & trenc\\
 \d{o} & punt superior \\
