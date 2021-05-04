@@ -20,15 +20,15 @@ Per importar gràfics i imatges a LaTeX hauràs d'utilitzar el paquet `graphicx`
 \usepackage{graphicx}
 
 \begin{document}
-This picture
+Aquesta imatge
 \begin{center}
   \includegraphics[height=2cm]{example-image}
 \end{center}
-is an imported PDF.
+és un PDF importat.
 \end{document}
 ```
 
-Pots incloure fitxers EPS, PNG, JPG i PDF. Si tens més d'una extensió per a la imatge que vols incloure hauràs d'incloure l'extensió. Si només tens una versió, per exemple `example-image.png`, no cal posar l'extensió, com en l'exemple que acabem de veure.
+Pots incloure fitxers EPS, PNG, JPG i PDF. Si tens més d'una extensió per a la imatge que vols incloure hauràs de posar l'extensió obligatòriament. Si només tens una versió del fitxer, per exemple `example-image.png`, no cal posar l'extensió, com en l'exemple que acabem de veure.
 
 Hauràs vist que hem utilitzat una nova variable, `center`, per tal de posicionar la imatge centrada a la pàgina. [Més endavant](lesson-11), parlarem més sobre espaiat i posicionament.
 
@@ -47,7 +47,7 @@ El més obvi que podem fer sobre una imatge és definir l'`amplada` i l'`altura`
 \begin{center}
   \includegraphics[height = 0.5\textheight]{example-image}
 \end{center}
-Some text
+Una mica de text
 \begin{center}
   \includegraphics[width = 0.5\textwidth]{example-image}
 \end{center}
@@ -68,7 +68,7 @@ També pots `escalar` les imatges, o rotar-les un determinat `angle`, o bé sele
 \end{document}
 ```
 
-## Fer les imatges flotant
+## Fer les imatges flotants
 
 En la composició tipogràfica tradicional, i en particular en els documents tècnics,
 les imatges es poden moure d'un lloc a un altre del document. En diem un *objecte flotant*. Les imatges normalment s'inclouen com a objectes flotants per tal d'evitar els espais en blanc en la pagina.
@@ -77,19 +77,19 @@ les imatges es poden moure d'un lloc a un altre del document. En diem un *object
 \documentclass{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
-\usepackage{lipsum}  % produce dummy text as filler
+\usepackage{lipsum}  % produeix un text de farciment automàtic
 
 \begin{document}
-\lipsum[1-4] % Just a few filler paragraphs
+\lipsum[1-4] % Uns pocs paràgrafs de farciment
 
-Test location.
+Test de posicionament.
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.5\textwidth]{example-image-a.png}
-  \caption{An example image}
+  \caption{Una imatge d'exemple}
 \end{figure}
 
-\lipsum[6-10] % Just a few filler paragraphs
+\lipsum[6-10] % Uns pocs paràgrafs de farciment
 \end{document}
 ```
 
@@ -98,10 +98,10 @@ test` fins la part alta del segon paràgraf, ja que no hi ha prou espai per la i
 
 - `h` 'Aquí' ('Here') (si és possible)
 - `t` Al capdamunt ('Top') de la pàgina
-- `b` Al fina ('Bottom') de la pàgina
+- `b` Al final ('Bottom') de la pàgina
 - `p` Una pàgina dedicada només per als objectes flotants
 
-[Més endavant](lesson-09), veurem com poder fer referències creuades a aquests objectes flotants
+[Més endavant](lesson-09), veurem com podem fer referències creuades a aquests objectes flotants
 de manera que puguem citar-los en el text.
 
 Hauràs notat que hem centrat la imatge utilitzant la comanda `\centering` enlloc de l'entorn `center`. A l'interior d'un objecte flotant utilitzarem `\centering` si vols centrar horitzontalment el seu contingut; això impedeix que tant l'objecte flotant com l'entorn `center` afegeixin un espai vertical extra.
@@ -114,4 +114,4 @@ Explora què pots fer utilitzant les paraules clau `height`, `width`, `angle` i 
 
 Utilitza `width` per definir el tamany d'una imatge en relació a `\textwidth` i d'una altra imatge en relació a `\linewidth`. Mira com es comporten utilitzant o no l'opció `twocolumn`.
 
-Utilitza `lipsum` per fer una demostració amb un text llarg, i prova de posicionar floats utilitzant diferents especificadors de posició. Com es comporten les imatges amb els diferents especificadors?
+Utilitza `lipsum` per fer una demostració amb un text llarg, i prova de posicionar flotants utilitzant diferents especificadors de posició. Com es comporten les imatges amb els diferents especificadors?
